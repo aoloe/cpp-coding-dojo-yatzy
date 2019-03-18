@@ -15,6 +15,8 @@ enum class Categories
 	sixes
 };
 
-int score(Categories, std::array<int, 5>);
+using Dice = std::array<int, 5>;
+
+int score(Categories, Dice);
 
 }

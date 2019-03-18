@@ -5,12 +5,12 @@
 
 namespace Yatzy {
 
-static int numbers(std::array<int, 5> dice, int number)
+static int numbers(Dice dice, int number)
 {
     return std::count(dice.begin(), dice.end(), number) * number;
 }
 
-int score(Categories categories, std::array<int, 5> dice)
+int score(Categories categories, Dice dice)
 {
     switch (categories) {
         case Categories::chance:
