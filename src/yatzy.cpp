@@ -13,6 +13,8 @@ int score(Categories categories, std::array<int, 5> dice)
         return std::equal(dice.begin() + 1, dice.end(), dice.begin()) ? 50 : 0;
     } else if (categories == Categories::fours) {
         return std::count(dice.begin(), dice.end(), 4) * 4;
+    } else if (categories == Categories::twos) {
+        return std::count(dice.begin(), dice.end(), 2) * 2;
     }
     return 0;
 }
