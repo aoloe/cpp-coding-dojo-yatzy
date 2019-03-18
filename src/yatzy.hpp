@@ -5,7 +5,8 @@
 namespace Yatzy {
 enum class Categories
 {
-    chance
+    chance,
+	yatzy
 };
 
 int score(Categories, std::array<int, 5>);
