@@ -9,5 +9,6 @@ int main()
 	assert(Yatzy::score(Yatzy::Categories::chance, {4,5,5,6,1}) == 21);
 	assert(Yatzy::score(Yatzy::Categories::yatzy, {1,1,1,1,1}) == 50);
 	assert(Yatzy::score(Yatzy::Categories::yatzy, {5,5,5,5,5}) == 50);
+	assert(Yatzy::score(Yatzy::Categories::yatzy, {1,1,1,2,1}) == 0);
     
 }
