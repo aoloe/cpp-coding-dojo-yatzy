@@ -22,6 +22,7 @@ int score(Categories categories, Dice dice)
         case Categories::twos:
             return numbers(dice, 2);
         case Categories::threes:
+            return numbers(dice, 3);
         break;
         case Categories::fours:
             return numbers(dice, 4);
