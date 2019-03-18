@@ -12,7 +12,7 @@ int score(Categories categories, std::array<int, 5> dice)
     } else if (categories == Categories::yatzy) {
         return std::equal(dice.begin() + 1, dice.end(), dice.begin()) ? 50 : 0;
     } else if (categories == Categories::fours) {
-        return 8;
+        return std::count(dice.begin(), dice.end(), 4) * 4;
     }
     return 0;
 }
