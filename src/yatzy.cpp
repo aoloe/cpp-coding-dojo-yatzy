@@ -4,9 +4,13 @@
 
 namespace Yatzy {
 
-int score(Categories, std::array<int, 5> dice)
+int score(Categories categories, std::array<int, 5> dice)
 {
-    return std::accumulate(dice.begin(), dice.end(), 0);
+    if (categories == Categories::chance) {
+        return std::accumulate(dice.begin(), dice.end(), 0);
+    } else {
+        return 50;
+    }
 }
 
 }
