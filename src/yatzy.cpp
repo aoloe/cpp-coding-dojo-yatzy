@@ -5,6 +5,11 @@
 
 namespace Yatzy {
 
+static int numbers(std::array<int, 5> dice, int number)
+{
+    return std::count(dice.begin(), dice.end(), number) * number;
+}
+
 int score(Categories categories, std::array<int, 5> dice)
 {
     switch (categories) {
@@ -15,11 +20,11 @@ int score(Categories categories, std::array<int, 5> dice)
         case Categories::ones:
         break;
         case Categories::twos:
-            return std::count(dice.begin(), dice.end(), 2) * 2;
+            return numbers(dice, 2);
         case Categories::threes:
         break;
         case Categories::fours:
-            return std::count(dice.begin(), dice.end(), 4) * 4;
+            return numbers(dice, 4);
         case Categories::fives:
         break;
         case Categories::sixes:
