@@ -18,7 +18,7 @@ int score(Categories categories, Dice dice)
         case Categories::yatzy:
             return std::equal(dice.begin() + 1, dice.end(), dice.begin()) ? 50 : 0;
         case Categories::ones:
-        break;
+            return numbers(dice, 1);
         case Categories::twos:
             return numbers(dice, 2);
         case Categories::threes:
