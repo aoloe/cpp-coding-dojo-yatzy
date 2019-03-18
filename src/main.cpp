@@ -12,5 +12,5 @@ int main()
 	assert(Yatzy::score(Yatzy::Categories::yatzy, {1,1,1,2,1}) == 0);
 	assert(Yatzy::score(Yatzy::Categories::fours, {1,1,2,4,4}) == 8);
 	assert(Yatzy::score(Yatzy::Categories::fours, {1,1,2,4,3}) == 4);
-	// assert(Yatzy::score(Yatzy::Categories::twos, {2,3,2,5,1}) == 4);
+	assert(Yatzy::score(Yatzy::Categories::twos, {2,3,2,5,1}) == 4);
 }
